@@ -14,33 +14,6 @@ body {
   line-height: 22px;
   color: #555555;
 }
-
-.bold {
-  font-weight: 700;
-  font-size: 19px;
-  text-transform: uppercase;
-  text-align: center;
-}
-.imena {
-  font-weight: 700;
-  font-size: 17px;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: underline;
-  color: #fff;
-}
-
-.semi-bold {
-  font-weight: 500;
-  font-size: 16px;
-}
-
-.under-word{
-  text-transform: uppercase;
-  color: #1F2255;
-  font-size: small;
-}
-
 .resume {
   width: 800px;
   height: auto;
@@ -57,13 +30,13 @@ body {
   color: #fff;
   text-align: center;
 }
-.resume .lijevo .resume_profile {
+.resume .lijevo .slika {
  width: 100%;
  height: 250px;
  padding: 30px;
  padding-bottom: 10px;
 }
-.resume .lijevo .resume_profile img{
+.resume .lijevo .slika img{
 width: 100%;
 height: 100%;
 border-radius: 50%;
@@ -85,7 +58,7 @@ border-radius: 50%;
   color: #1F2255;
 }
 
-.resume .resume_item {
+.resume .item {
   padding: 25px 0;
   border-bottom: 2px solid #fff;
 }
@@ -94,8 +67,8 @@ border-radius: 50%;
   border-bottom: 2px solid #fff;
 }
 
-.resume .lijevo .resume_item:last-child,
-.resume .resume_right .resume_item:last-child {
+.resume .lijevo .item:last-child,
+.resume .resume_right .item:last-child {
   border-bottom: 0px;
 }
 
@@ -154,6 +127,32 @@ h4::after {
   position: relative;
 }
 
+.bold {
+  font-weight: 700;
+  font-size: 19px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.imena {
+  font-weight: 700;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.semi-bold {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.under-word{
+  text-transform: uppercase;
+  color: #1F2255;
+  font-size: small;
+}
+
 .stil{
   color: #1F2255;
   font-size:16px;
@@ -185,7 +184,7 @@ h4::after {
   color: #fff;
 }
 
-.resume .lijevo .resume_skills ul li {
+.resume .lijevo .word_style ul li {
   display: flex;
   margin-bottom: 10px;
   color: #1F2255;
@@ -193,12 +192,12 @@ h4::after {
   align-items: center;
 }
 
-.resume .lijevo .resume_skills ul li .skill_name {
+.resume .lijevo .word_style ul li .language {
   color: white;
   width: 25%;
 }
 
-.resume .lijevo .resume_skills ul li .skill_progress {
+.resume .lijevo .word_style ul li .skill_progress {
   width: 60%;
   margin: 0 5px;
   height: 5px;
@@ -206,11 +205,11 @@ h4::after {
   position: relative;
 }
 
-.resume .lijevo .resume_skills ul li .skill_per {
+.resume .lijevo .word_style ul li .skill_per {
   width: 15%;
 }
 
-.resume .lijevo .resume_skills ul li .skill_progress span {
+.resume .lijevo .word_style ul li .skill_progress span {
   position: absolute;
   top: 0;
   left: 0;
@@ -242,8 +241,8 @@ h4::after {
   color: #1F2255;
 }
 
-.resume .resume_right .resume_work ul,
-.resume .resume_right .resume_education ul {
+.resume .resume_right .work ul,
+.resume .resume_right .education ul {
   padding-left: 40px;
   overflow: hidden;
 }
@@ -267,30 +266,30 @@ h4::after {
   margin-bottom: 0;
 }
 
-.resume .resume_right .resume_work ul li:before,
-.resume .resume_right .resume_education ul li:before {
+.resume .resume_right .work ul li:before,
+.resume .resume_right .education ul li:before {
   content: "";
   position: absolute;
-  top: 5px;
-  left: -25px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
   border: 2px solid #1F2255;
+  top: 5px;
+  left: -25px;
 }
 
-.resume .resume_right .resume_work ul li:after,
-.resume .resume_right .resume_education ul li:after {
+.resume .resume_right .work ul li:after,
+.resume .resume_right .education ul li:after {
   content: "";
   position: absolute;
+  height: 115px;
+  background: #1F2255;
   top: 14px;
   left: -21px;
   width: 2px;
-  height: 115px;
-  background: #1F2255;
 }
 
-.resume .resume_right .resume_work ul .prvi:after{
+.resume .resume_right .work ul .prvi:after{
   content: "";
   position: absolute;
   top: 14px;
@@ -299,7 +298,7 @@ h4::after {
   height: 222px;
   background: #1F2255;
 }
-.resume .resume_right .resume_work ul .drugi:after{
+.resume .resume_right .work ul .drugi:after{
   content: "";
   position: absolute;
   top: 14px;
@@ -308,7 +307,7 @@ h4::after {
   height: 460px;
   background: #1F2255;
 }
-.resume .resume_right .resume_work ul .treci:after{
+.resume .resume_right .work ul .treci:after{
   content: "";
   position: absolute;
   top: 14px;
